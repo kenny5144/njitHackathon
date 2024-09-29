@@ -25,3 +25,50 @@ body {
     text-wrap: balance;
   }
 }
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0.4;
+  }
+}
+
+.neon-text {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff1177, 0 0 40px #ff1177,
+    0 0 50px #ff1177;
+}
+
+.animate-flicker {
+  animation: flicker 3s infinite;
+}
+
+.disco-border {
+  box-shadow: 0 0 30px #ff1177, 0 0 40px #ff1177;
+}
+
+.glow-button {
+  box-shadow: 0 0 10px #ff1177, 0 0 20px #ff1177;
+}
+
+.disco-input {
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.disco-input:focus {
+  border-color: #ff1177;
+}
+
+.animate-spin-slow {
+  animation: spin 8;
+}
