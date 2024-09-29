@@ -27,15 +27,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`${
-        isHomePage
-          ? "bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500"
-          : ""
-      } pt-1`}
-    >
+    <nav className=" bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 pt-1">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-        <h1 className="text-3xl font-extrabold text-yellow-200">PennyWiseai</h1>
+        <Link href={"/"} className="text-3xl font-extrabold text-yellow-200">
+          PennyWiseai
+        </Link>
         <div className="space-x-4">
           {isLoggedIn ? (
             <button
