@@ -7,27 +7,6 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-black text-white">
-        {/* Navbar */}
-        <nav className=" bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 pt-1">
-          <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <h1 className="text-3xl font-extrabold text-yellow-200">
-              PennyWiseai
-            </h1>
-            <div className="space-x-4">
-              <Link href="/Signup">
-                <button className="underline text-black py-2  rounded-lg font-bold hover:bg-yellow-400 transition-all">
-                  Sign Up
-                </button>
-              </Link>
-              <Link href="/Login">
-                <button className="bg-yellow-500 rounded-2xl text-black py-3 px-7 font-bold hover:bg-yellow-400 transition-all">
-                  Login
-                </button>
-              </Link>
-            </div>
-          </div>
-        </nav>
-
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-500 p-8 pt-20">
           <h1 className="text-6xl font-extrabold text-yellow-300 mb-4 text-center">
