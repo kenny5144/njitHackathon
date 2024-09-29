@@ -4,20 +4,30 @@
   "description": "this is for the njit hackathon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
   },
   "author": "Kehinde ojo",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.658.1",
+    "@google/generative-ai": "^0.20.0",
+    "aws-sdk": "^2.1691.0",
     "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.65.0",
     "passport": "^0.7.0",
+    "pdf-parse": "^1.1.1",
     "prisma": "^5.20.0"
   }
 }
